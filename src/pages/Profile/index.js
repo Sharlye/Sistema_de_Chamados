@@ -101,7 +101,6 @@ export default function Profile(){
      })
 
    }else if(nome !== '' && imageAvatar !== null){
-     // Atualizar tanto nome quanto a foto
      handleUpload()
    }
 

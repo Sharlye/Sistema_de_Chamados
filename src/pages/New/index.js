@@ -108,7 +108,6 @@ export default function New(){
     e.preventDefault();
 
     if(idCustomer){
-      //Atualizando chamado
       const docRef = doc(db, "chamados", id)
       await updateDoc(docRef, {
         cliente: customers[customerSelected].nomeFantasia,
@@ -133,7 +132,6 @@ export default function New(){
     }
 
 
-    //Registrar um chamado
     await addDoc(collection(db, "chamados"), {
       created: new Date(),
       cliente: customers[customerSelected].nomeFantasia,

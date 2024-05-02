@@ -16,7 +16,6 @@ function AuthProvider({ children }){
   }
 
 
-  // Cadastro, novo usuario
   async function signUp(email, password, name){
     setLoadingAuth(true);
 
